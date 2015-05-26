@@ -19,6 +19,8 @@ if (isset($_POST['submit'])) {
 
 		if ($found_admin) {
 
+			$_SESSION["username"] = $found_admin["username"];
+
 			redirect_to("admin.php");
 		} else {
 
